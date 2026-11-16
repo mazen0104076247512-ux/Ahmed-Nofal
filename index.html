@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="أحمد نوفل - تنظيم رحلات عمره وعمرة مع شركة مواسم البركة للسياحة. رحلتك إلى بيت الله الحرام تبدأ براحة واطمئنان."
+    />
+    <title>أحمد نوفل | مواسم البركة للسياحة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="page-topbar" id="pageTopbar">
+        <div class="topbar-inner">
+          <div class="topbar-left">
+            <span class="topbar-page-icon" id="topbarPageIcon">
+              <svg viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4v-7H9v7H5a1 1 0 0 1-1-1v-8.5Z" /></svg>
+            </span>
+            <span class="topbar-page-name" id="topbarPageName">الرئيسية</span>
+          </div>
+          <div class="topbar-right">
+            <span class="topbar-datetime" id="topbarDatetime"></span>
+            <span class="topbar-divider"></span>
+            <span class="topbar-greeting" id="topbarGreeting"></span>
+          </div>
+        </div>
+        <div class="topbar-progress" id="topbarProgress"></div>
+      </div>
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a href="#top" class="brand" aria-label="مواسم البركة للسياحة">
+            <img src="assets/logo.svg" alt="شعار مواسم البركة للسياحة" />
+            <div>
+              <span class="brand-name">مواسم البركة</span>
+              <small>للسياحة</small>
+            </div>
+          </a>
+
+          <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="main-nav" aria-label="التنقل الرئيسي">
+            <div class="nav-panel-header">
+              <button class="nav-close" type="button" aria-label="إغلاق القائمة">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14.5 5.5L8 12l6.5 6.5" />
+                </svg>
+              </button>
+              <div class="nav-company">
+                <img src="assets/logo.svg" alt="شعار مواسم البركة للسياحة" />
+                <div>
+                  <strong>مواسم البركة</strong>
+                  <small>للسياحة</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-links">
+              <a href="#top" class="nav-link active">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4v-7H9v7H5a1 1 0 0 1-1-1v-8.5Z" /></svg>
+                </span>
+                الرئيسية
+              </a>
+              <a href="#services" class="nav-link">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M7 5h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm1 6h8M8 9h8M8 15h6" /></svg>
+                </span>
+                الخدمات
+              </a>
+              <a href="#about" class="nav-link">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-7 7a7 7 0 0 1 14 0" /></svg>
+                </span>
+                من نحن
+              </a>
+              <a href="#contact" class="nav-link">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.5 4.5h3l1.2 4.2-1.7 1.7A13 13 0 0 0 17.6 17l1.7-1.7 4.2 1.2v3a2 2 0 0 1-2 2A17 17 0 0 1 4.5 6.5a2 2 0 0 1 2-2Z" /></svg>
+                </span>
+                تواصل
+              </a>
+            </div>
+
+            <div class="nav-panel-actions">
+              <a href="#contact" class="btn btn-primary nav-book-btn">حجز الآن</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="top">
+          <div class="hero-overlay"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <span class="eyebrow">رحلات عمره وعمرة | أحمد نوفل</span>
+              <h1>رحلتك إلى بيت الله الحرام تبدأ براحة واطمئنان.</h1>
+              <p>
+                تنظيم ومتابعة واهتمام بكل التفاصيل، لنرافقك في رحلة إيمانية لا تُنسى
+                مع شركة مواسم البركة. كل خطوة مُخططة بعناية لتمنحك تجربة مريحة، هادئة، وملهمة.
+              </p>
+
+              <div class="cta-row">
+                <a href="#services" class="btn btn-primary">ابدأ اكتشاف الرحلات</a>
+                <a href="#about" class="btn btn-secondary">اعرف أكثر</a>
+              </div>
+
+              <div class="hero-stats">
+                <div>
+                  <strong>+1200</strong>
+                  <span>رحلة منظمّة</span>
+                </div>
+                <div>
+                  <strong>24/7</strong>
+                  <span>دعم متواصل</span>
+                </div>
+                <div>
+                  <strong>4.9/5</strong>
+                  <span>تقييم الزوار</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal">
+              <div class="visual-card main-card">
+                <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+                <div class="profile-badge">
+                  <span class="badge-icon">✦</span>
+                  <div>
+                    <small>مع أحمد نوفل</small>
+                    <strong>منظم رحلات عمره</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="floating-card travel-card">
+                <span class="mini-tag">رحلاتنا</span>
+                <h3>حزمة شاملة</h3>
+                <ul>
+                  <li>إقامة مريحة</li>
+                  <li>نقل ذكي</li>
+                  <li>إرشاد كامل</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services section" id="services">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">ماذا نقدم؟</span>
+              <h2>خدمات مصممة لتجربة رحلات مريحة ومميزة.</h2>
+            </div>
+
+            <div class="cards-grid">
+              <article class="info-card reveal">
+                <div class="icon-wrap">
+                  <img src="assets/icons/plane.svg" alt="رحلات عمرة" />
+                </div>
+                <h3>تنظيم رحلات العمرة</h3>
+                <p>برمجة دقيقة للخطط، المواعيد، والإقامة مع متابعة مستمرة قبل السفر أثناءه.</p>
+              </article>
+
+              <article class="info-card reveal">
+                <div class="icon-wrap">
+                  <img src="assets/icons/guide.svg" alt="إرشاد" />
+                </div>
+                <h3>إرشاد متواصل</h3>
+                <p>فريق متخصص يرحب بك، يرافقك، ويوفر لك كل المعلومة اللازمة للرحلة.</p>
+              </article>
+
+              <article class="info-card reveal">
+                <div class="icon-wrap">
+                  <img src="assets/icons/hotel.svg" alt="إقامة" />
+                </div>
+                <h3>إقامة وخدمات</h3>
+                <p>اختيار أماكن مناسبة وقريبة من الأماكن المقدسة مع خدمات مريحة ومرنة.</p>
+              </article>
+
+              <article class="info-card reveal">
+                <div class="icon-wrap">
+                  <img src="assets/icons/guide.svg" alt="خدمة دعم" />
+                </div>
+                <h3>دعم ما قبل السفر</h3>
+                <p>مرافقة دقيقة قبل الرحلة وتوضيح كل التفاصيل لتجربة أكثر راحة وثقة.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="about section" id="about">
+          <div class="container about-grid">
+            <div class="about-visual reveal">
+              <div class="about-box">
+                <h3>رحلتك إلى بيت الله الحرام</h3>
+                <p>تنظيم، متابعة، واهتمام بكل التفاصيل من لحظة الاستفسار حتى العودة إلى الوطن.</p>
+                <ul>
+                  <li>برمجة وأولوية في الوقت</li>
+                  <li>خدمة ودية واحترافية</li>
+                  <li>مواعيد دقيقة ومتابعة مستمرة</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-copy reveal">
+              <span class="eyebrow">من نحن</span>
+              <h2>مع أحمد نوفل، نضع رحلتك في أيدي خبراء.</h2>
+              <p>
+                شركة مواسم البركة للسياحة تقدم خدماتٍ متكاملة خاصة برحلات العمرة والزيارة، مع
+                تركيزٍ على الراحة، التنظيم، والالتزام الكامل بتفاصيل كل برنامج، لتجعل لك
+                تجربة مميزة تتوافق مع احتياجاتك وقيمك.
+              </p>
+              <p>
+                نحن نعمل لتجعل من كل رحلة مناسبة روحياً وبدنيّاً، لأن السفر إلى بيت الله
+                يحتاج إلى تخطيط هادئ، ودعم متواصل، واهتمام كبير من فريقٍ يفهم مشاعر المسافرين.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">تواصل معنا</span>
+              <h2>احجز رحلتك الآن مع أحمد نوفل.</h2>
+            </div>
+
+            <div class="contact-grid reveal">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M6.5 4.5h3l1.2 4.2-1.7 1.7A13 13 0 0 0 17.6 17l1.7-1.7 4.2 1.2v3a2 2 0 0 1-2 2A17 17 0 0 1 4.5 6.5a2 2 0 0 1 2-2Z" /></svg>
+                </div>
+                <h3>اتصل بنا</h3>
+                <p>تواصل مباشرة مع أحمد نوفل للاستفسار عن الرحلات والحجز.</p>
+                <a href="tel:+966500000000" class="btn btn-primary">اتصل الآن</a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 0 8 9 8-9" /></svg>
+                </div>
+                <h3>راسلنا</h3>
+                <p>أرسل لنا بريداً إلكترونياً وسنرد عليك في أقرب وقت ممكن.</p>
+                <a href="mailto:info@tamimah-travel.com" class="btn btn-secondary">راسلنا الآن</a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" /></svg>
+                </div>
+                <h3>واتساب</h3>
+                <p>تحدث معنا عبر واتساب للرد السريع والمتابعة الفورية.</p>
+                <a href="https://wa.me/966500000000" class="btn btn-primary">ابدأ المحادثة</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="whatsapp-float">
+        <a href="https://wa.me/201063256596" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+          <span class="wa-pulse"></span>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+
+        </a>
+      </div>
+
+      <footer class="site-footer">
+        <div class="container footer-wrap">
+          <div>
+            <span class="eyebrow">تواصل معنا</span>
+            <h3>احجز رحلتك الآن</h3>
+          </div>
+
+          <div class="footer-actions">
+            <a href="tel:+966500000000" class="btn btn-primary">اتصل الآن</a>
+            <a href="mailto:info@tamimah-travel.com" class="btn btn-secondary">راسلنا</a>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1FF1sSCz5y/" target="_blank" rel="noopener" aria-label="فيسبوك">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/nofal8811" target="_blank" rel="noopener" aria-label="إنستغرام">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://wa.me/201063256596" target="_blank" rel="noopener" aria-label="واتساب">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </a>
+          </div>
+          <p>© <span id="year"></span> مواسم البركة للسياحة. جميع الحقوق محفوظة.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>
