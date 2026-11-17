@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="رحلات العمرة والزيارة مع أحمد نوفل - شركة مواسم البركة للسياحة. برامج متميزة وأسعار مناسبة مع إشراف دائم ورعاية متكاملة."
+    />
+    <title>رحلات العمرة والزيارة | أحمد نوفل - مواسم البركة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/trips.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <!-- TOPBAR -->
+      <div class="page-topbar" id="pageTopbar">
+        <div class="topbar-inner">
+          <div class="topbar-left">
+            <span class="topbar-page-icon" id="topbarPageIcon">
+              <svg viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 0 1 2 2v1a2 2 0 0 0 2 2 2 2 0 0 1 2 2v2.945M8 3.935V5.5A2.5 2.5 0 0 0 10.5 8h.5a2 2 0 0 1 2 2 2 2 0 1 0 4 0 2 2 0 0 1 2-2h1.064M15 20.488V18a2 2 0 0 1 2-2h3.064M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </span>
+            <span class="topbar-page-name" id="topbarPageName">رحلات العمرة والزيارة</span>
+          </div>
+          <div class="topbar-right">
+            <span class="topbar-datetime" id="topbarDatetime"></span>
+            <span class="topbar-divider"></span>
+            <span class="topbar-greeting" id="topbarGreeting"></span>
+          </div>
+        </div>
+        <div class="topbar-progress" id="topbarProgress"></div>
+      </div>
+
+      <!-- SITE HEADER & NAVIGATION -->
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a href="index.html" class="brand" aria-label="مواسم البركة للسياحة">
+            <img src="assets/logo.svg" alt="شعار مواسم البركة للسياحة" />
+            <div>
+              <span class="brand-name">مواسم البركة</span>
+              <small>للسياحة</small>
+            </div>
+          </a>
+
+          <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="main-nav" aria-label="التنقل الرئيسي">
+            <div class="nav-panel-header">
+              <button class="nav-close" type="button" aria-label="إغلاق القائمة">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14.5 5.5L8 12l6.5 6.5" />
+                </svg>
+              </button>
+              <div class="nav-company">
+                <img src="assets/logo.svg" alt="شعار مواسم البركة للسياحة" />
+                <div>
+                  <strong>مواسم البركة</strong>
+                  <small>للسياحة</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-links">
+              <a href="index.html" class="nav-link">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4v-7H9v7H5a1 1 0 0 1-1-1v-8.5Z" /></svg>
+                </span>
+                الرئيسية
+              </a>
+              <a href="trips.html" class="nav-link active">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 0 1 2 2v1a2 2 0 0 0 2 2 2 2 0 0 1 2 2v2.945M8 3.935V5.5A2.5 2.5 0 0 0 10.5 8h.5a2 2 0 0 1 2 2 2 2 0 1 0 4 0 2 2 0 0 1 2-2h1.064M15 20.488V18a2 2 0 0 1 2-2h3.064M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                </span>
+                الرحلات
+              </a>
+              <a href="index.html#services" class="nav-link">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M7 5h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm1 6h8M8 9h8M8 15h6" /></svg>
+                </span>
+                الخدمات
+              </a>
+              <a href="index.html#about" class="nav-link">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-7 7a7 7 0 0 1 14 0" /></svg>
+                </span>
+                من نحن
+              </a>
+              <a href="index.html#contact" class="nav-link">
+                <span class="nav-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.5 4.5h3l1.2 4.2-1.7 1.7A13 13 0 0 0 17.6 17l1.7-1.7 4.2 1.2v3a2 2 0 0 1-2 2A17 17 0 0 1 4.5 6.5a2 2 0 0 1 2-2Z" /></svg>
+                </span>
+                تواصل
+              </a>
+            </div>
+
+            <div class="nav-panel-actions">
+              <a href="https://wa.me/201063256596?text=مرحباً%20أستاذ%20أحمد%20نوفل،%20أود%20الاستفسار%20عن%20رحلات%20العمرة" class="btn btn-primary nav-book-btn" target="_blank" rel="noopener">تواصل الآن</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- TRIPS HERO BANNER -->
+        <section class="trips-hero">
+          <div class="container trips-hero-content">
+            <span class="eyebrow">برامج وباقات موسم 1447هـ</span>
+            <h1>رحلات العمرة والزيارة المباركة</h1>
+            <p>
+              باقات متكاملة ومدروسة بعناية نرافقك فيها خطوة بخطوة إلى بيت الله الحرام ومسجد رسوله الكريم ﷺ،
+              مع تنظيم رفيع المستوى وإشراف مباشر من <strong>أ. أحمد نوفل</strong> لضمان أقصى درجات الراحة والسكينة.
+            </p>
+            <div class="trips-supervisor-badge">
+              <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+              <span>المشرف العام ومرافق الرحلات: <strong>أحمد نوفل</strong></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- FILTER CHIPS BAR -->
+        <section class="filter-bar-wrap">
+          <div class="container filter-bar">
+            <div class="filter-chips">
+              <button class="filter-chip active" data-filter="all">جميع الرحلات</button>
+              <button class="filter-chip" data-filter="shaban">عمرة شعبان</button>
+              <button class="filter-chip" data-filter="ramadan">عمرة رمضان</button>
+              <button class="filter-chip" data-filter="rajab">عمرة رجب</button>
+              <button class="filter-chip" data-filter="shawwal">عمرة شوال</button>
+            </div>
+            <div class="filter-count" id="tripsCount">عرض 6 من 6 رحلات</div>
+          </div>
+        </section>
+
+        <!-- TRIPS GRID (3 UNDER 3) -->
+        <section class="trips-section">
+          <div class="container">
+            <div class="trips-section-header">
+              <h2>اختر برنامج العمرة المناسب لك</h2>
+              <p>تمتع بأفضل باقات الإقامة الفندقية والنقل المريح مع رعاية متواصلة</p>
+            </div>
+
+            <!-- GRID 3X3: 3 CARDS TOP, 3 CARDS BOTTOM -->
+            <div class="trips-grid-3x3">
+              <!-- CARD 1: SHABAN -->
+              <article class="trip-card" data-category="shaban">
+                <div class="trip-card-image">
+                  <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80" alt="عمرة شعبان الفاخرة" loading="lazy" />
+                  <div class="trip-card-overlay"></div>
+                  <span class="trip-card-badge">الأكثر طلباً • فاخرة</span>
+                  <div class="trip-card-category">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>مكة المكرمة والمدينة المنورة</span>
+                  </div>
+                </div>
+
+                <div class="trip-card-body">
+                  <div class="trip-card-header">
+                    <div class="trip-rating">
+                      <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                      <span>4.9 (140 معتمر)</span>
+                    </div>
+                    <span class="trip-days-tag">14 يوماً / 13 ليلة</span>
+                  </div>
+
+                  <h3 class="trip-card-title">رحلة عمرة شعبان الفاخرة - جوار الحرم</h3>
+
+                  <!-- SUPERVISOR HIGHLIGHT -->
+                  <div class="trip-supervisor-row">
+                    <div class="trip-supervisor-avatar">
+                      <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+                    </div>
+                    <div class="trip-supervisor-info">
+                      <span class="trip-supervisor-label">المشرف العام ومرافق الفوج:</span>
+                      <strong class="trip-supervisor-name">أ. أحمد نوفل</strong>
+                    </div>
+                  </div>
+
+                  <!-- EXTERIOR DETAILS GRID -->
+                  <div class="trip-details-grid">
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM16 2v4M8 2v4M3 10h18"/></svg>
+                      </div>
+                      <div>
+                        <strong>تاريخ الانطلاق</strong>
+                        <span>1 شعبان 1447هـ</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                      </div>
+                      <div>
+                        <strong>وسيلة السفر</strong>
+                        <span>طيران مباشر</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 9h2M9 13h2M13 9h2M13 13h2"/></svg>
+                      </div>
+                      <div>
+                        <strong>مستوى الإقامة</strong>
+                        <span>فنادق 5 نجوم مطلة</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                      <div>
+                        <strong>الخدمات</strong>
+                        <span>شامل التأشيرة والتنقلات</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trip-card-footer">
+                    <div class="trip-price-wrap">
+                      <span class="trip-price-label">السعر يبدأ من</span>
+                      <div class="trip-price-val">38,500 <small>ج.م</small></div>
+                    </div>
+                    <a href="trip-details.html?id=1" class="btn trip-view-btn">
+                      <span>عرض التفاصيل</span>
+                      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 2: RAJAB -->
+              <article class="trip-card" data-category="rajab">
+                <div class="trip-card-image">
+                  <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80" alt="عمرة رجب الاقتصادية" loading="lazy" />
+                  <div class="trip-card-overlay"></div>
+                  <span class="trip-card-badge">اقتصادي متميز • راحة وتوفير</span>
+                  <div class="trip-card-category">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>مكة المكرمة والمدينة المنورة</span>
+                  </div>
+                </div>
+
+                <div class="trip-card-body">
+                  <div class="trip-card-header">
+                    <div class="trip-rating">
+                      <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                      <span>4.8 (95 معتمر)</span>
+                    </div>
+                    <span class="trip-days-tag">10 أيام / 9 ليالٍ</span>
+                  </div>
+
+                  <h3 class="trip-card-title">رحلة عمرة رجب الاقتصادية المتميزة</h3>
+
+                  <div class="trip-supervisor-row">
+                    <div class="trip-supervisor-avatar">
+                      <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+                    </div>
+                    <div class="trip-supervisor-info">
+                      <span class="trip-supervisor-label">المشرف العام ومرافق الفوج:</span>
+                      <strong class="trip-supervisor-name">أ. أحمد نوفل</strong>
+                    </div>
+                  </div>
+
+                  <div class="trip-details-grid">
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM16 2v4M8 2v4M3 10h18"/></svg>
+                      </div>
+                      <div>
+                        <strong>تاريخ الانطلاق</strong>
+                        <span>15 رجب 1447هـ</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                      </div>
+                      <div>
+                        <strong>وسيلة السفر</strong>
+                        <span>طيران مباشر</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 9h2M9 13h2M13 9h2M13 13h2"/></svg>
+                      </div>
+                      <div>
+                        <strong>مستوى الإقامة</strong>
+                        <span>فنادق 4 نجوم + باصات</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                      <div>
+                        <strong>الخدمات</strong>
+                        <span>تأشيرة، مزارات، زمزم</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trip-card-footer">
+                    <div class="trip-price-wrap">
+                      <span class="trip-price-label">السعر يبدأ من</span>
+                      <div class="trip-price-val">27,500 <small>ج.م</small></div>
+                    </div>
+                    <a href="trip-details.html?id=2" class="btn trip-view-btn">
+                      <span>عرض التفاصيل</span>
+                      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 3: RAMADAN 1 -->
+              <article class="trip-card" data-category="ramadan">
+                <div class="trip-card-image">
+                  <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=800&q=80" alt="عمرة أول رمضان" loading="lazy" />
+                  <div class="trip-card-overlay"></div>
+                  <span class="trip-card-badge">روحانيات رمضانية • أول الشهر</span>
+                  <div class="trip-card-category">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>مكة المكرمة والمدينة المنورة</span>
+                  </div>
+                </div>
+
+                <div class="trip-card-body">
+                  <div class="trip-card-header">
+                    <div class="trip-rating">
+                      <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                      <span>5.0 (180 معتمر)</span>
+                    </div>
+                    <span class="trip-days-tag">10 أيام / 9 ليالٍ</span>
+                  </div>
+
+                  <h3 class="trip-card-title">عمرة العشر الأوائل من شهر رمضان المبارك</h3>
+
+                  <div class="trip-supervisor-row">
+                    <div class="trip-supervisor-avatar">
+                      <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+                    </div>
+                    <div class="trip-supervisor-info">
+                      <span class="trip-supervisor-label">المشرف العام ومرافق الفوج:</span>
+                      <strong class="trip-supervisor-name">أ. أحمد نوفل</strong>
+                    </div>
+                  </div>
+
+                  <div class="trip-details-grid">
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM16 2v4M8 2v4M3 10h18"/></svg>
+                      </div>
+                      <div>
+                        <strong>تاريخ الانطلاق</strong>
+                        <span>1 رمضان 1447هـ</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                      </div>
+                      <div>
+                        <strong>وسيلة السفر</strong>
+                        <span>طيران الخطوط السعودية</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 9h2M9 13h2M13 9h2M13 13h2"/></svg>
+                      </div>
+                      <div>
+                        <strong>مستوى الإقامة</strong>
+                        <span>5 نجوم إطلالة على الحرم</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                      <div>
+                        <strong>الوجبات</strong>
+                        <span>سحور وإفطار بوفيه فاخر</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trip-card-footer">
+                    <div class="trip-price-wrap">
+                      <span class="trip-price-label">السعر يبدأ من</span>
+                      <div class="trip-price-val">44,000 <small>ج.م</small></div>
+                    </div>
+                    <a href="trip-details.html?id=3" class="btn trip-view-btn">
+                      <span>عرض التفاصيل</span>
+                      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 4: RAMADAN LAST 10 DAYS -->
+              <article class="trip-card" data-category="ramadan">
+                <div class="trip-card-image">
+                  <img src="https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?auto=format&fit=crop&w=800&q=80" alt="عمرة العشر الأواخر" loading="lazy" />
+                  <div class="trip-card-overlay"></div>
+                  <span class="trip-card-badge">ليلة القدر • ختم القرآن</span>
+                  <div class="trip-card-category">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>مكة المكرمة والمدينة المنورة</span>
+                  </div>
+                </div>
+
+                <div class="trip-card-body">
+                  <div class="trip-card-header">
+                    <div class="trip-rating">
+                      <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                      <span>5.0 (220 معتمر)</span>
+                    </div>
+                    <span class="trip-days-tag">15 يوماً / 14 ليلة</span>
+                  </div>
+
+                  <h3 class="trip-card-title">عمرة العشر الأواخر وختم القرآن الكريم في الحرم</h3>
+
+                  <div class="trip-supervisor-row">
+                    <div class="trip-supervisor-avatar">
+                      <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+                    </div>
+                    <div class="trip-supervisor-info">
+                      <span class="trip-supervisor-label">المشرف العام ومرافق الفوج:</span>
+                      <strong class="trip-supervisor-name">أ. أحمد نوفل</strong>
+                    </div>
+                  </div>
+
+                  <div class="trip-details-grid">
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM16 2v4M8 2v4M3 10h18"/></svg>
+                      </div>
+                      <div>
+                        <strong>تاريخ الانطلاق</strong>
+                        <span>19 رمضان 1447هـ</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                      </div>
+                      <div>
+                        <strong>وسيلة السفر</strong>
+                        <span>طيران مباشر VIP</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 9h2M9 13h2M13 9h2M13 13h2"/></svg>
+                      </div>
+                      <div>
+                        <strong>مستوى الإقامة</strong>
+                        <span>5 نجوم ديلوكس ببرج الساعة</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                      <div>
+                        <strong>المميزات</strong>
+                        <span>تهجد واعتكاف وإفطار وسحور</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trip-card-footer">
+                    <div class="trip-price-wrap">
+                      <span class="trip-price-label">السعر يبدأ من</span>
+                      <div class="trip-price-val">58,900 <small>ج.م</small></div>
+                    </div>
+                    <a href="trip-details.html?id=4" class="btn trip-view-btn">
+                      <span>عرض التفاصيل</span>
+                      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 5: ISRAA WA MIRAJ / FAMILY -->
+              <article class="trip-card" data-category="rajab">
+                <div class="trip-card-image">
+                  <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=800&q=80" alt="عمرة الإسراء والمعراج العائلية" loading="lazy" />
+                  <div class="trip-card-overlay"></div>
+                  <span class="trip-card-badge">برنامج عائلي مريح</span>
+                  <div class="trip-card-category">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>مكة المكرمة والمدينة المنورة</span>
+                  </div>
+                </div>
+
+                <div class="trip-card-body">
+                  <div class="trip-card-header">
+                    <div class="trip-rating">
+                      <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                      <span>4.9 (110 معتمر)</span>
+                    </div>
+                    <span class="trip-days-tag">12 يوماً / 11 ليلة</span>
+                  </div>
+
+                  <h3 class="trip-card-title">عمرة الإسراء والمعراج الروحانية (برنامج العائلات)</h3>
+
+                  <div class="trip-supervisor-row">
+                    <div class="trip-supervisor-avatar">
+                      <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+                    </div>
+                    <div class="trip-supervisor-info">
+                      <span class="trip-supervisor-label">المشرف العام ومرافق الفوج:</span>
+                      <strong class="trip-supervisor-name">أ. أحمد نوفل</strong>
+                    </div>
+                  </div>
+
+                  <div class="trip-details-grid">
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM16 2v4M8 2v4M3 10h18"/></svg>
+                      </div>
+                      <div>
+                        <strong>تاريخ الانطلاق</strong>
+                        <span>24 رجب 1447هـ</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                      </div>
+                      <div>
+                        <strong>وسيلة السفر</strong>
+                        <span>طيران مباشر</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 9h2M9 13h2M13 9h2M13 13h2"/></svg>
+                      </div>
+                      <div>
+                        <strong>مستوى الإقامة</strong>
+                        <span>فنادق 4 نجوم شارع أجياد</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                      <div>
+                        <strong>المزارات</strong>
+                        <span>مزارات مكة والمدينة كاملة</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trip-card-footer">
+                    <div class="trip-price-wrap">
+                      <span class="trip-price-label">السعر يبدأ من</span>
+                      <div class="trip-price-val">32,000 <small>ج.م</small></div>
+                    </div>
+                    <a href="trip-details.html?id=5" class="btn trip-view-btn">
+                      <span>عرض التفاصيل</span>
+                      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 6: SHAWWAL -->
+              <article class="trip-card" data-category="shawwal">
+                <div class="trip-card-image">
+                  <img src="https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?auto=format&fit=crop&w=800&q=80" alt="عمرة شوال وعيد الفطر" loading="lazy" />
+                  <div class="trip-card-overlay"></div>
+                  <span class="trip-card-badge">أجواء العيد • برنامج التيسير</span>
+                  <div class="trip-card-category">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <span>مكة المكرمة والمدينة المنورة</span>
+                  </div>
+                </div>
+
+                <div class="trip-card-body">
+                  <div class="trip-card-header">
+                    <div class="trip-rating">
+                      <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                      <span>4.8 (85 معتمر)</span>
+                    </div>
+                    <span class="trip-days-tag">8 أيام / 7 ليالٍ</span>
+                  </div>
+
+                  <h3 class="trip-card-title">عمرة شوال وعيد الفطر المبارك (برنامج التيسير)</h3>
+
+                  <div class="trip-supervisor-row">
+                    <div class="trip-supervisor-avatar">
+                      <img src="images/WhatsApp Image 2026-11-11 at 1.38.07 PM.jpeg" alt="أحمد نوفل" />
+                    </div>
+                    <div class="trip-supervisor-info">
+                      <span class="trip-supervisor-label">المشرف العام ومرافق الفوج:</span>
+                      <strong class="trip-supervisor-name">أ. أحمد نوفل</strong>
+                    </div>
+                  </div>
+
+                  <div class="trip-details-grid">
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM16 2v4M8 2v4M3 10h18"/></svg>
+                      </div>
+                      <div>
+                        <strong>تاريخ الانطلاق</strong>
+                        <span>3 شوال 1447هـ</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                      </div>
+                      <div>
+                        <strong>وسيلة السفر</strong>
+                        <span>طيران مباشر مريح</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 9h2M9 13h2M13 9h2M13 13h2"/></svg>
+                      </div>
+                      <div>
+                        <strong>مستوى الإقامة</strong>
+                        <span>فنادق 4 نجوم مميزة</span>
+                      </div>
+                    </div>
+
+                    <div class="trip-spec-item">
+                      <div class="trip-spec-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      </div>
+                      <div>
+                        <strong>الخدمات</strong>
+                        <span>تأشيرة، إرشاد، تنقلات</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="trip-card-footer">
+                    <div class="trip-price-wrap">
+                      <span class="trip-price-label">السعر يبدأ من</span>
+                      <div class="trip-price-val">25,800 <small>ج.م</small></div>
+                    </div>
+                    <a href="trip-details.html?id=6" class="btn trip-view-btn">
+                      <span>عرض التفاصيل</span>
+                      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- TRUST & QUALITY STRIP -->
+        <section class="trust-strip">
+          <div class="container trust-grid">
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="trust-text">
+                <h4>إشراف مباشر ومرافق</h4>
+                <p>مرافقة ميدانية وتوجيه إيماني مستمر من أ. أحمد نوفل وفريقه</p>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 21h18M6 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12M9 9h2M9 13h2M13 9h2M13 13h2"/></svg>
+              </div>
+              <div class="trust-text">
+                <h4>فنادق قريبة ومميزة</h4>
+                <p>مختارة بعناية لتوفير الراحة والسكينة جوار الحرمين الشريفين</p>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+              </div>
+              <div class="trust-text">
+                <h4>تنقلات مريحة VIP</h4>
+                <p>حافلات حديثة ومكيفة لكافة الصلوات والمزارات والتفويج</p>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4 12 14.01l-3-3"/></svg>
+              </div>
+              <div class="trust-text">
+                <h4>إجراءات موثوقة وسريعة</h4>
+                <p>استخراج تأشيرات وتأمين طبي معتمد ومتابعة دقيقة لكل مسافر</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FLOATING WHATSAPP -->
+      <div class="whatsapp-float">
+        <a href="https://wa.me/201063256596?text=مرحباً%20أستاذ%20أحمد%20نوفل،%20أود%20الاستفسار%20عن%20برامج%20الرحلات" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب مع أحمد نوفل">
+          <span class="wa-pulse"></span>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </a>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="container footer-wrap">
+          <div>
+            <span class="eyebrow">تواصل معنا</span>
+            <h3>احجز رحلتك الآن مع أحمد نوفل</h3>
+          </div>
+
+          <div class="footer-actions">
+            <a href="https://wa.me/201063256596?text=مرحباً%20أستاذ%20أحمد%20نوفل،%20أود%20حجز%20رحلة%20عمرة" class="btn btn-primary" target="_blank" rel="noopener">واتساب مباشر</a>
+            <a href="tel:+201063256596" class="btn btn-secondary">اتصل الآن</a>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1FF1sSCz5y/" target="_blank" rel="noopener" aria-label="فيسبوك">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/nofal8811" target="_blank" rel="noopener" aria-label="إنستغرام">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://wa.me/201063256596" target="_blank" rel="noopener" aria-label="واتساب">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </a>
+          </div>
+          <p>© <span id="year"></span> مواسم البركة للسياحة. جميع الحقوق محفوظة.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/trips.js"></script>
+  </body>
+</html>
